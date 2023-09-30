@@ -1941,6 +1941,7 @@ a {
   cursor: pointer;
   display: flex;
   right: 0;
+  z-index: 999;
   margin-right: 20px;
 }
 
@@ -2267,7 +2268,7 @@ a {
   .sec-footer_info .container {
     padding: 0 15px;
     margin: 0 auto;
-    width: 450px;
+    width: 375px;
   }
 
   .container .footer_addressBar .footer_address {

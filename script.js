@@ -1,23 +1,24 @@
 $(document).ready(function () {
-  // Initially, show the Residential projects and hide others
-  $("#residential_project").show();
-  $("#commercial_project, #retail_project").hide();
+  // Initially hide all content except Residential
+  $(".content:not(#residential_project)").hide();
 
-  // Click event for Residential tab
-  $(".tab.residential").on("click", function () {
-    $("#residential_project").show();
-    $("#commercial_project, #retail_project").hide();
-  });
+  // Handle click on project links
+  $(".tab").click(function (e) {
+    e.preventDefault();
 
-  // Click event for Commercial tab
-  $(".tab.commercial").on("click", function () {
-    $("#commercial_project").show();
-    $("#residential_project, #retail_project").hide();
-  });
+    // Get the target ID from the href attribute
+    var targetId = $(this).attr("href");
 
-  // Click event for Retail tab
-  $(".tab.retail").on("click", function () {
-    $("#retail_project").show();
-    $("#residential_project, #commercial_project").hide();
+    // Hide all content
+    $(".content").hide();
+
+    // Show the selected content
+    $(targetId).show();
+
+    // Remove the 'active' class from all tabs
+    $(".tab").removeClass("active");
+
+    // Add 'active' class to the clicked tab
+    $(this).addClass("active");
   });
 });
