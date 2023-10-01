@@ -23,21 +23,35 @@ $(document).ready(function () {
   });
 });
 
-// Initialize Swiper
 var popupWrapper = document.getElementById("popwrapper");
-var backgroundContent = document.querySelector("main"); // Adjust this selector based on your structure
+var blurElements = document.querySelectorAll(".blur-me"); // Select all elements to be blurred
+
+function applyBlur() {
+  // Apply blur to selected elements
+  blurElements.forEach(function (element) {
+    element.style.filter = "blur(5px)";
+  });
+}
+
+function removeBlur() {
+  // Remove blur from selected elements
+  blurElements.forEach(function (element) {
+    element.style.filter = "none";
+  });
+}
 
 function openPopup() {
   popupWrapper.style.display = "block";
-  backgroundContent.style.filter = "blur(5px)"; // Apply blur to the background content
+  applyBlur(); // Apply blur to selected elements
   mySwiper.update(); // Update Swiper when the pop-up is opened
 }
 
 function closePopup() {
   popupWrapper.style.display = "none";
-  backgroundContent.style.filter = "none"; // Remove blur from the background content
+  removeBlur(); // Remove blur from selected elements
+
+  // Clean up Swiper if it's initialized (you should have mySwiper defined globally)
+  if (mySwiper) {
+    mySwiper.destroy();
+  }
 }
-
-// You can call openPopup() to open the pop-up when needed.
-
-// You can call openPopup() to open the pop-up when needed.

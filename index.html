@@ -25,28 +25,54 @@
     <div class="popup-wrapper" id="popwrapper">
       <div class="popup-container">
         <span class="close-btn" onclick="closePopup()">X</span>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="image1.jpg" alt="Image 1" />
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://www.koltepatil.com/assets/uploads/webp/hola-desk.webp"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
-            <div class="swiper-slide">
-              <img src="image2.jpg" alt="Image 2" />
+            <div class="carousel-item">
+              <img
+                src="https://www.koltepatil.com/assets/uploads/alora-popup.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
-            <div class="swiper-slide">
-              <img src="image3.jpg" alt="Image 3" />
+            <div class="carousel-item">
+              <img
+                src="https://www.koltepatil.com/assets/uploads/webp/newpopup45.webp"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
-            <!-- Add more slides as needed -->
           </div>
-          <!-- Add navigation buttons if desired -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
     <!-- navbar -->
     <header>
-      <div class="left-header">
+      <div class="left-header blur-me">
         <a href="#" class="logo">
           <img
             src="https://www.koltepatil.com/assets/dist/images/logo.jpg"
@@ -130,7 +156,7 @@
           <li><a href="#">CAREERS</a></li>
         </ul>
       </div>
-      <div class="right-header">
+      <div class="right-header blur-me">
         <div class="search-box">
           <input type="text" placeholder="Search Your Property" />
           <i class="fa fa-search serch-icon"></i>
@@ -155,7 +181,7 @@
     </header>
 
     <!-- banner -->
-    <section id="main">
+    <section id="main" class="blur-me">
       <div class="main-text">
         KOLTE <br />
         PATIL
@@ -173,7 +199,7 @@
       </div>
     </section>
 
-    <div class="popup-form-wrp mobile-search-form-popup">
+    <div class="popup-form-wrp mobile-search-form-popup blur-me">
       <span class="overlay"></span>
       <div>
         <p class="heading">
@@ -509,7 +535,7 @@
     </div>
 
     <!-- img-banner -->
-    <section class="home_project mob-dropdown-wrp">
+    <section class="home_project mob-dropdown-wrp blur-me">
       <div class="home_project_header">
         <h1 class="title1 has-animation animation-done">
           Explore <span>our future-ready Anti-Fragile spaces</span>
@@ -767,7 +793,7 @@
     </section>
 
     <!-- image galary -->
-    <section class="sec-did_you_know" data-scrollmagic2="">
+    <section class="sec-did_you_know blur-me" data-scrollmagic2="">
       <div class="did_small_img whiteLayer reveal">
         <img
           data-src=""
@@ -808,7 +834,7 @@
 
     <!-- transparant data -->
     <section
-      class="sec-home_vision inner_img lazyloaded"
+      class="sec-home_vision inner_img lazyloaded blur-me"
       data-bgset=""
       style="
         background-image: url('https://www.koltepatil.com/assets/dist/images/webp/home_about_vision.webp');
@@ -855,7 +881,7 @@
     </section>
 
     <!-- awards and recogs -->
-    <section class="sec-awards" id="sec-awards">
+    <section class="sec-awards blur-me" id="sec-awards">
       <div class="container">
         <h4 class="title1 darkTitle has-animation animation-done">
           Awards &amp; <span>recognition</span>
@@ -932,7 +958,7 @@
 
     <!-- media covrage -->
     <section
-      class="sec-awards"
+      class="sec-awards blur-me"
       id="sec-awards"
       style="
         background-image: url('https://www.koltepatil.com/assets/uploads/webp/media-home-bg.webp');
@@ -1061,7 +1087,7 @@
 
     <!-- press -->
     <section
-      class="sec-press_releases"
+      class="sec-press_releases blur-me"
       id="sec-press_releases"
       style="background: #fffbf6"
     >
@@ -1139,7 +1165,7 @@
 
     <!-- blogs -->
     <section
-      class="sec-awards"
+      class="sec-awards blur-me"
       id="sec-awards"
       style="
         background-image: url('https://www.koltepatil.com/assets/uploads/webp/media-home-bg.webp');
@@ -1263,7 +1289,7 @@
     </section>
 
     <!-- footer -->
-    <section class="sec-footer_info">
+    <section class="sec-footer_info blur-me">
       <div class="container">
         <h4 class="head">Kolte <span>patil</span></h4>
         <div class="footer_addressBar">
@@ -1324,7 +1350,7 @@
     </section>
 
     <!-- sideone -->
-    <div class="project360-wrap lr-animated-logo">
+    <div class="project360-wrap lr-animated-logo blur-me">
       <div class="project360-head">
         <a href="" target="_blank">
           <img
@@ -1336,7 +1362,7 @@
     </div>
 
     <!-- sidetwo -->
-    <div class="project360-wrap openroom-logo">
+    <div class="project360-wrap openroom-logo blur-me">
       <div class="project360-head">
         <a href="" target="_blank">
           <img
