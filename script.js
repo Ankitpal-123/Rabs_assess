@@ -22,3 +22,22 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 });
+
+// Initialize Swiper
+var popupWrapper = document.getElementById("popwrapper");
+var backgroundContent = document.querySelector("main"); // Adjust this selector based on your structure
+
+function openPopup() {
+  popupWrapper.style.display = "block";
+  backgroundContent.style.filter = "blur(5px)"; // Apply blur to the background content
+  mySwiper.update(); // Update Swiper when the pop-up is opened
+}
+
+function closePopup() {
+  popupWrapper.style.display = "none";
+  backgroundContent.style.filter = "none"; // Remove blur from the background content
+}
+
+// You can call openPopup() to open the pop-up when needed.
+
+// You can call openPopup() to open the pop-up when needed.
