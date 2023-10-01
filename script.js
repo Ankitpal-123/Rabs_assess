@@ -55,3 +55,16 @@ function closePopup() {
     mySwiper.destroy();
   }
 }
+
+// navbar hamburger
+const hamburger = document.getElementById("hamburger");
+const menu = document.getElementById("menu");
+const closeButton = document.getElementById("close-button");
+
+hamburger.addEventListener("click", () => {
+  menu.style.display = "block";
+});
+
+closeButton.addEventListener("click", () => {
+  menu.style.display = "none";
+});
